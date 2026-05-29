@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fffaf7;
+  color: #1f2428;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.premium-surface {
+  background:
+    radial-gradient(circle at top left, rgba(239, 81, 56, 0.1), transparent 34rem),
+    linear-gradient(135deg, #fffaf7 0%, #ffffff 45%, #f3fbf5 100%);
+}
+
+.image-theme-frame {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 14%, rgba(239, 81, 56, 0.14), transparent 18rem),
+    radial-gradient(circle at 84% 82%, rgba(44, 141, 78, 0.13), transparent 16rem),
+    linear-gradient(135deg, #fff7f3 0%, #ffffff 46%, #f1fbf4 100%);
+}
+
+.image-theme-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.36) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.36) 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 72%);
+  pointer-events: none;
+}
+
+.image-theme-frame::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 8%;
+  height: 12%;
+  border-radius: 999px;
+  background: rgba(31, 36, 40, 0.08);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.image-theme-frame > img,
+.image-theme-frame > span,
+.image-theme-frame .theme-image {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-glass {
+  background: transparent;
+  border: 0;
+  filter:
+    drop-shadow(0 12px 22px rgba(31, 36, 40, 0.12))
+    drop-shadow(0 0 18px rgba(239, 81, 56, 0.12));
+}
