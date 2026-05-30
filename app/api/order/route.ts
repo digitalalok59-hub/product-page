@@ -64,11 +64,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true, order });
   } catch (error) {
     console.error("Order submission failed", error);
-    const message =
-      error instanceof Error
-        ? error.message
-        : "Order submission failed. Please try again.";
 
-    return NextResponse.json({ message }, { status: 500 });
+    return NextResponse.json(
+      {
+        message:
+          "Order submission is temporarily unavailable. Please contact us or try again shortly."
+      },
+      { status: 500 }
+    );
   }
 }

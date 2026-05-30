@@ -183,6 +183,28 @@ If credentials are missing or incorrect, the checkout page will show a clear err
 
 The API route `/api/order` runs server-side on Vercel, so Google credentials and SMTP passwords are not exposed to customers.
 
+### Required Vercel Environment Variables
+
+Add these in `Vercel Project Settings` then `Environment Variables` for Production, Preview, and Development if you test all environments:
+
+```text
+NEXT_PUBLIC_SITE_URL
+BUSINESS_EMAIL
+EMAIL_FROM
+BRAND_NAME
+GOOGLE_SHEET_ID
+GOOGLE_SHEET_TAB_NAME
+GOOGLE_SERVICE_ACCOUNT_EMAIL
+GOOGLE_PRIVATE_KEY
+SMTP_HOST
+SMTP_PORT
+SMTP_USER
+SMTP_PASS
+FRONTEND_URL
+```
+
+For `GOOGLE_PRIVATE_KEY`, paste the full private key value with newline escapes (`\n`) exactly as provided by Google. After saving or changing environment variables, redeploy the latest deployment from Vercel so the API can read them.
+
 ## Product Notes
 
 - Online payment is not included.
