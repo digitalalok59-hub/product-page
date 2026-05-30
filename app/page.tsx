@@ -21,8 +21,8 @@ export default function HomePage() {
     <main>
       <ScrollToTopOnLoad />
       <section className="premium-surface overflow-hidden">
-        <header className="flex w-full items-center justify-between gap-4 px-4 pt-4 sm:px-6 lg:px-8">
-          <div className="logo-glass -ml-6 flex h-24 w-80 items-center justify-start overflow-visible sm:-ml-8 sm:h-32 sm:w-[34rem] lg:-ml-10 lg:h-36 lg:w-[40rem]">
+        <header className="flex w-full items-center px-0 pt-4 sm:px-2 lg:px-3">
+          <div className="logo-glass -ml-10 flex h-24 w-80 items-center justify-start overflow-visible sm:-ml-14 sm:h-32 sm:w-[34rem] lg:-ml-20 lg:h-36 lg:w-[40rem]">
             <Image
               src="/images/warmbox-logo.png"
               alt="WarmBox logo"
@@ -31,10 +31,6 @@ export default function HomePage() {
               className="h-full w-full object-contain"
               priority
             />
-          </div>
-          <div className="hidden items-center gap-3 rounded-full border border-leaf-600/20 bg-white/85 px-4 py-2 text-sm font-bold text-leaf-700 shadow-sm sm:flex">
-            <PackageCheck size={17} />
-            Cash On Delivery
           </div>
         </header>
 
