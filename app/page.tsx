@@ -21,13 +21,13 @@ export default function HomePage() {
     <main>
       <ScrollToTopOnLoad />
       <section className="premium-surface overflow-hidden">
-        <header className="flex w-full items-center px-0 pt-4 sm:px-2 lg:px-3">
-          <div className="logo-glass -ml-10 flex h-24 w-80 items-center justify-start overflow-visible sm:-ml-14 sm:h-32 sm:w-[34rem] lg:-ml-20 lg:h-36 lg:w-[40rem]">
+        <header className="flex w-full items-center px-2 pt-4 sm:px-4 lg:px-6">
+          <div className="logo-glass -ml-2 flex h-28 w-72 items-center justify-start overflow-visible sm:-ml-4 sm:h-32 sm:w-[34rem] lg:-ml-6 lg:h-36 lg:w-[40rem]">
             <Image
-              src="/images/warmbox-logo.png"
+              src="/images/warmbox-logo-cropped.png"
               alt="WarmBox logo"
-              width={640}
-              height={400}
+              width={495}
+              height={174}
               className="h-full w-full object-contain"
               priority
             />

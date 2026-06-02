@@ -31,3 +31,5 @@ Thumbs.db
 
 # Generated local backup assets
 public/images/warmbox-logo-with-lines.png
+
+.vercel
